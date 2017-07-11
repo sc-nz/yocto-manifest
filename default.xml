@@ -1,16 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+This is a copy of the file at https://github.com/digi-embedded/dey-manifest/blob/morty/default.xml
+with the repository revisions replaced with the specific SHAs. If this build is to be promoted to
+a stable build of biosphere then the contents of this file should be commited as 
+https://github.com/sc-nz/yocto-manifest/blob/master/default.xml. thereafter a stable build of biosphere will
+use the same repo revisions as this build did.
+-->
 <manifest>
   <default sync-j="4" revision="morty"/>
+
   <remote name="digi"  fetch="git://github.com/digi-embedded"/>
   <remote name="fsl"   fetch="git://github.com/Freescale"/>
+  <remote name="qt5"   fetch="git://github.com/meta-qt5"/>
+  <remote name="swu"   fetch="git://github.com/sbabic"/>
   <remote name="oe"    fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="99afac66f435aaf73496223d3e68fd3b070106e3">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="aa2d5fd346ecd82721f353212c40791d3650c58c">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-fsl-arm.git"      path="sources/meta-fsl-arm"      remote="yocto" revision="417f669e4dede244a81e11aa6d8b60c4e333e589"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="2ea8d7f54a061e902657c4f8ea1f7f7c25c6c4e1"/>
-  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="e08994ce953ff5ab49b260e7763a40bfad4285ca"/>
+  <project name="meta-freescale.git"      path="sources/meta-freescale"      remote="yocto" revision="fa774ad7fb797957601a8c9fee45af453fea34b7"/>
+  <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="fe5c83312de11e80b85680ef237f8acb04b4b26e"/>
+  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="394e5552e452737c92c0e6bec5ad3cc9c059af37"/>
+  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="fd7f2d644a94bbb951c0bed11af7deb35f1cfb22"/>
 </manifest>
-

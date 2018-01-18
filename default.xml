@@ -16,13 +16,13 @@ use the same repo revisions as this build did.
   <remote name="oe"    fetch="git://git.openembedded.org"/>
   <remote name="yocto" fetch="git://git.yoctoproject.org"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="2c4c4dff4a220ba315b85fafc38fffe0223d233f">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="52969229d548245ea2bad1bda04ba8982fe8493d">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="fa774ad7fb797957601a8c9fee45af453fea34b7"/>
+  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="05681fdf8298bb441c15135eae424c7601b07e98"/>
   <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390"/>
-  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="fe5c83312de11e80b85680ef237f8acb04b4b26e"/>
-  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="3601fd2c5306ac6d5d0d536e0be8cbb90da9b4c1"/>
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="394e5552e452737c92c0e6bec5ad3cc9c059af37"/>
-  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="7d5822bf4cb2089687c3c9a908cf4a4ef4e9a53a"/>
+  <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="b40116cf457b88a2db14b86fda9627fb34d56ae6"/>
+  <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="2c9f0e4eb0e9097f6f872ec1e1d81768a8ab5f1b"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="6c066d36b1c3c6d46f16c09efe5fb7681bbf3dc5"/>
+  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="8298428c032ec9bc5b514d0c194a16cf371475ea"/>
 </manifest>

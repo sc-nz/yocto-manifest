@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
+<!--
 This is a copy of the file at https://github.com/digi-embedded/dey-manifest/blob/morty/default.xml
-with the repository revisions replaced with the specific SHAs. If this build is to be promoted to
-a stable build of biosphere then the contents of this file should be commited as 
-https://github.com/sc-nz/yocto-manifest/blob/master/default.xml. thereafter a stable build of biosphere will
-use the same repo revisions as this build did.
+using sc-nz mirrors and the repository revisions replaced with the specific SHAs. If this build is
+to be promoted to a stable build of biosphere then the contents of this file should be committed as
+https://github.com/sc-nz/yocto-manifest/blob/master/default.xml. Thereafter a stable build of biosphere
+will use the same repo revisions as this build did.
 -->
 <manifest>
   <default sync-j="4" revision="morty"/>
 
-  <remote name="digi"  fetch="git://github.com/digi-embedded"/>
-  <remote name="fsl"   fetch="git://github.com/Freescale"/>
-  <remote name="qt5"   fetch="git://github.com/meta-qt5"/>
-  <remote name="swu"   fetch="git://github.com/sbabic"/>
-  <remote name="oe"    fetch="git://git.openembedded.org"/>
-  <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+  <remote name="digi"  fetch="ssh://git@github.com/sc-nz"/>
+  <remote name="fsl"   fetch="ssh://git@github.com/sc-nz"/>
+  <remote name="qt5"   fetch="ssh://git@github.com/sc-nz"/>
+  <remote name="swu"   fetch="ssh://git@github.com/sc-nz"/>
+  <remote name="oe"    fetch="ssh://git@github.com/sc-nz"/>
+  <remote name="yocto" fetch="ssh://git@github.com/sc-nz"/>
 
   <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="52969229d548245ea2bad1bda04ba8982fe8493d">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>

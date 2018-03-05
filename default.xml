@@ -25,4 +25,5 @@ will use the same repo revisions as this build did.
   <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="2c9f0e4eb0e9097f6f872ec1e1d81768a8ab5f1b"/>
   <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="6c066d36b1c3c6d46f16c09efe5fb7681bbf3dc5"/>
   <project name="poky.git"              path="sources/poky"              remote="yocto" revision="8298428c032ec9bc5b514d0c194a16cf371475ea"/>
+  <project name="meta-virtualization.git" path="sources/meta-virtualization" remote="yocto" revision="eb6b5129561eda9ea1f47e85ab9ed9e5a6b8f64c"/>
 </manifest>

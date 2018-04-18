@@ -16,14 +16,14 @@ will use the same repo revisions as this build did.
   <remote name="oe"    fetch="ssh://git@github.com/sc-nz"/>
   <remote name="yocto" fetch="ssh://git@github.com/sc-nz"/>
 
-  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="52969229d548245ea2bad1bda04ba8982fe8493d">
+  <project name="meta-digi.git" path="sources/meta-digi" remote="digi" revision="762444fd509f9cc32d21dafa8fa85ef0f949c9a2">
     <copyfile src="sdk/mkproject.sh" dest="mkproject.sh"/>
   </project>
-  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="05681fdf8298bb441c15135eae424c7601b07e98"/>
+  <project name="meta-freescale.git"    path="sources/meta-freescale"    remote="yocto" revision="ab03682ac4590245e2f4b8113000a6161bc8e9a7"/>
   <project name="meta-fsl-demos.git"    path="sources/meta-fsl-demos"    remote="fsl"   revision="cd5c7a2539f40004f74126e9fdf08254fd9a6390"/>
   <project name="meta-openembedded.git" path="sources/meta-openembedded" remote="oe"    revision="b40116cf457b88a2db14b86fda9627fb34d56ae6"/>
   <project name="meta-qt5.git"          path="sources/meta-qt5"          remote="qt5"   revision="2c9f0e4eb0e9097f6f872ec1e1d81768a8ab5f1b"/>
-  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="6c066d36b1c3c6d46f16c09efe5fb7681bbf3dc5"/>
-  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="8298428c032ec9bc5b514d0c194a16cf371475ea"/>
-  <project name="meta-virtualization.git" path="sources/meta-virtualization" remote="yocto" revision="eb6b5129561eda9ea1f47e85ab9ed9e5a6b8f64c"/>
+  <project name="meta-swupdate.git"     path="sources/meta-swupdate"     remote="swu"   revision="6cc8bfbd3a9d63a35341bc2496f3329dbb06124c"/>
+  <project name="poky.git"              path="sources/poky"              remote="yocto" revision="0e730770a9529f2a0b3219efcc1de7e8842105e8"/>
+  <project name="meta-virtualization.git" path="sources/meta-virtualization" remote="yocto" revision="eb79dfd7980f3cc18e0377e53d2ccacd1b378f08"/>
 </manifest>
